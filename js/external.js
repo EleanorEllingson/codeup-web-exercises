@@ -2,16 +2,20 @@ console.log("Hello from external Javascript")
 alert("Welcome to my Website!")
 var userInput = prompt("What is your favorite color?")
 alert("Great, " + userInput + " is my favorite color too!")
-let moviePerDay = 3
-let LittleMermaid = 3
-let BrotherBear = 5
-let Hercules = 1
+
+var moviePerDay = Number(prompt("What is the daily rental rate?"))
+var LittleMermaid = Number(prompt("How long did you rent Little Mermaid for?"))
+var BrotherBear = Number(prompt("How long did you rent Brother Bear for?"))
+var Hercules = Number(prompt("How long did you rent Hercules for for?"))
+
 alert(moviePerDay * (LittleMermaid + BrotherBear + Hercules) + " dollars is the amount that you owe for the rentals.")
-let Google = 400
-let Amazon = 380
-let Facebook = 350
-var GoogleHours = prompt("How many hours did you work for Google?")
-var AmazonHours = prompt("How many hours did you work for Facebook?")
+
+let Google = Number(prompt("What is Googles hourly rate?"))
+let Amazon = Number(prompt("What is Amazons hourly rate?"))
+let Facebook = Number(prompt("What is Facebooks hourly rate?"))
+var GoogleHours = Number(prompt("How many hours did you work for Google?"))
+var AmazonHours = Number(prompt("How many hours did you work for Amazon?"))
+var FacebookHours = Number(prompt("How many hours did you work for Facebook?"))
 alert("Your payment for the week will be " + (Google * GoogleHours + Amazon * AmazonHours + Facebook * FacebookHours) + ".")
 
 var x = prompt("How many students can enroll in this class?")
