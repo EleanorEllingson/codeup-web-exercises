@@ -20,6 +20,24 @@
  * console.logging the function's return value
  */
 
+function analyzeColor(color){
+    if (color === "blue"){
+        return "blue is the color of the sky";
+    }
+    else if (color === "red"){
+        return "Strawberries are red";
+    }
+    else if (color === "cyan") {
+        return "I don't know anything about cyan";
+    }
+    else {
+        return "That's another color"
+    }
+}
+console.log(analyzeColor("blue"))
+console.log(analyzeColor("red"))
+console.log(analyzeColor("cyan"))
+
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
@@ -32,11 +50,29 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Pass the `randomColor` variable to your function and console.log the results.
  * You should see a different message every time you refresh the page
  */
+function rainbowColors(randomColor){
 
+} console.log(randomColor)
 /**
  * TODO:
  * Refactor your above function to use a switch-case statement
  */
+var text;
+switch (randomColor) {
+    case "red":
+        text = "Strawberries are red";
+        break;
+    case "blue":
+        text = "blue is the color of the sky";
+        break;
+    case "cyan":
+        text = "I don't know anything about cyan";
+        break;
+    default:
+        text = "That's another color"
+        break;
+}
+console.log(text)
 
 /**
  * TODO:
@@ -46,7 +82,8 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  */
 
 /* ########################################################################## */
-
+var color = prompt("What is your favorite color?")
+alert(analyzeColor(color))
 /**
  * TODO:
  * Suppose there's a promotion in Walmart, each customer is given a randomly
@@ -66,6 +103,25 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
+var totAmount = Number(prompt("What is your total bill?"));
+var num = [0, 1, 2, 3, 4, 5];
+var luckyNumber = num[Math.floor(Math.random() * num.length)];
+function calculateTotal(lucky){
+    if(lucky === 1){
+        alert("You get a 10% discount, your total amount is $" + totAmount * (1 - .10));
+    } else if(lucky === 2){
+        alert("You get a 25% discount, your total amount is $" + totAmount * (1 - .25));
+    }  else if(lucky === 3){
+        alert("You get a 35% discount, your total amount is $" + totAmount * (1 - .35));
+    }  else if(lucky === 4){
+        alert("You get a 50% discount, your total amount is $" + totAmount * (1 - .50));
+    }  else if(lucky === 5){
+        alert("Your purchase is free!");
+    }  else {
+        alert("Sorry, no discount");
+    }
+}
+calculateTotal(luckyNumber)
 
 /**
  * TODO:
@@ -93,3 +149,20 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+var enterNumber = confirm("Would you like to enter a number?")
+if(enterNumber){
+   var number = prompt("Enter a number.")
+        if(number % 2 === 0 ){
+            alert("Your number is even")
+        } else {
+            alert("Your number is odd")
+        }
+        alert("Your number added to 100 is " + (number +++ 100));
+       if(number > 0){
+           alert("Your number is positive")
+       } else {
+           alert("Your number is negative")
+       } if(isNaN(number)){
+           alert("That is not a number")
+    }
+}
