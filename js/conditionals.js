@@ -150,19 +150,21 @@ calculateTotal(luckyNumber)
  * HINT: The way we prompt for a value could be improved
  */
 var enterNumber = confirm("Would you like to enter a number?")
-if(enterNumber){
-   var number = prompt("Enter a number.")
-        if(number % 2 === 0 ){
+    if (enterNumber) {
+        var number = prompt("Enter a number.")
+        if (number % 2 === 0) {
             alert("Your number is even")
         } else {
             alert("Your number is odd")
         }
-        alert("Your number added to 100 is " + (number +++ 100));
-       if(number > 0){
-           alert("Your number is positive")
-       } else {
-           alert("Your number is negative")
-       } if(isNaN(number)){
-           alert("That is not a number")
+        alert("Your number added to 100 is " + (number++ + 100));
+        if (number > 0) {
+            alert("Your number is positive")
+        } else {
+            alert("Your number is negative")
+        }
+        if (isNaN(parseFloat(number))) {
+            alert("That is not a number")
+        }
     }
 }
