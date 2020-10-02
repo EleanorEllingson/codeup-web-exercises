@@ -38,7 +38,7 @@ console.log(helloMessage);
  */
 var myName = "Eleanor";
 sayHello(myName);
-
+console.log(myName)
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
@@ -111,6 +111,6 @@ alert("Your total bill, including tip is: $" + (totalBill + tipAmount));
 function applyDiscount(originalPrice, discountPercent){
 
     //return originalPrice - originalPrice * discountPercent;
-    return originalPrice * (1 - discountPercent);
+    return originalPrice * (1 - discountPercent).toFixed;
 }
 console.log(applyDiscount(100, .20));
