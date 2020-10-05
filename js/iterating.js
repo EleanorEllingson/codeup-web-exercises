@@ -7,6 +7,7 @@
      * 'names'.
      */
     var names = ["Joshua", "Ethan", "Rebecca", "Elena"];
+    console.log(names)
     /**
      * TODO:
      * Create a log statement that will log the number of elements in the names
@@ -50,15 +51,15 @@
      *  > second([1, 2, 3, 4, 5]) // returns 2
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
-function returnFirstElement(array){
+function first(array){
     return array[0]
-    } console.log(returnFirstElement(names))
+    } console.log(first(names))
 
-    function returnSecondElement(array){
+    function second(array){
         return array[1]
-    } console.log(returnSecondElement(names))
+    } console.log(s(names))
 
-    function returnLastElement(array){
+    function last(array){
         return array[array.length - 1];
-    } console.log(returnLastElement(names));
+    } console.log(last(names));
 })();
