@@ -18,5 +18,4 @@ for (var i = 1; i <= 50; i = i + 2) {
     }
     console.log("Here is an odd number: " + i);
 
-
 }
