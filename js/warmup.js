@@ -12,3 +12,10 @@ function sayHello(name) {
 sayHello("Joshua")
 sayHello("Ethan")
 
+function caseSensitive(str) {
+    return str === str.toUpperCase() || str.toLowerCase();
+}
+console.log(caseSensitive("hello"));
+caseSensitive("HELLO");
+caseSensitive("Hello");
+
