@@ -28,9 +28,10 @@
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
-    function sayHello(){
-        return "Hello from " + person.firstName + " " + person.lastName + "!"
-    } console.log(sayHello())
+    person.sayHello = function (){
+        return "Hello from " + this.firstName + " " + this.lastName + "!"
+    };
+    console.log(person.sayHello())
 
 
 
@@ -108,7 +109,7 @@
             author: {firstName: "Suzanne ", lastName: "Collins"},
         }
     ]
-    console.log(books[4].author.lastName)
+    console.log(books[4].title)
 
 
     /**
@@ -155,13 +156,28 @@
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
-    // function createBook(title, author){
-    //     books.forEach(function (book))
-    //     if(title = book.title){
-    //         console.log("Book # " + index);
-    //         console.log("Title: " + book.title);
-    //         console.log("Author: " + book.author.firstName + book.author.lastName)
-    //         console.log("---")
+    function createBook(title, first, last){
+        var book = {
+            title: title,
+            author: {
+                firstName: first,
+                lastName: last
+            }
+
+        };
+    }
+    books.push(createBook("Wheel of Time", "Robert", "Jordan"));
+
+
+
+    // books.createBook = function (){
+    //     var newBook = {
+    //         title: prompt("What is the title of the book?"),
+    //         author: {
+    //             firstName: prompt("What is the author's first name?"),
+    //             lastName: prompt("What is the author's last name?")
+    //         }
+    //
     //     }
     // }
     
