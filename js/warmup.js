@@ -19,5 +19,13 @@ console.log(caseSensitive("hello"));
 caseSensitive("HELLO");
 caseSensitive("Hello");
 
+//Writ a function to convert a string into an array of words
+// Input "Trick or Treat"
+// Output: ['Trick', 'or', 'Treat']
+
+function stringToArray(input){
+    var stringSplit = input.split();
+    var stringArray = stringSplit(" " )
 
 
+} stringToArray("Trick or Treat")
