@@ -1,14 +1,15 @@
 (function() {
     "use strict";
-var radiusInput = 5
+
+
     // create a circle object
     var circle = {
-        radius: radiusInput,
+        radius: 3,
 
         getArea: function () {
             // TODO: complete this method
             // hint: area = pi * radius^2
-            var area = Math.PI * Math.pow(circle.radius, 2)
+            var area = Math.PI * Math.pow(this.radius, 2)
             return area; // TODO: return the proper value
 
         },
@@ -17,14 +18,14 @@ var radiusInput = 5
             // TODO: complete this method.
 
             if (doRounding === true) {
-                var round = Math.round(circle.getArea());
+                var round = Math.round(this.getArea());
 
-                console.log("Area of a circle with radius: " + circle.radius + ", is: " + round);
+                console.log("Area of a circle with radius: " + this.radius + ", is: " + round);
                 return round
             }
-            console.log("Area of a circle with radius: " + circle.radius + ", is: " + circle.getArea());
+            console.log("Area of a circle with radius: " + this.radius + ", is: " + this.getArea());
 
-            return circle.getArea()
+            return this.getArea()
             /*
              If doRounding is true, round the result to the nearest integer.
              Otherwise, output the complete value
@@ -43,7 +44,7 @@ var radiusInput = 5
 
     console.log("=======================================================");
     // TODO: Change the radius of the circle to 5.
-
+    circle.radius = 5
     // log info about the circle
     console.log("Raw circle information");
     circle.logInfo(false);
