@@ -12,34 +12,38 @@
     <h1>Register With Us</h1>
     <form method="POST" action="https://hookb.in/VGPERJbEB0TE22bwzWmn">
         <fieldset>
-
+        <div>
         <label for="email">Email</label>
         <input id="email" name="email" placeholder="Email">
-        <br><br>
 
+        </div>
+        <div>
         <label for="password">Password</label>
         <input id="password" name="password" placeholder="Password">
-        <br><br>
+        </div>
+        <div>
             <label for="bio">Bio</label>
-            <textarea input id="bio" name="bio" placeholder="Enter a short description about yourself"></textarea>
+            <textarea input id="bio" id="" cols="30" rows="10" name="bio" placeholder="Enter a short description about yourself"></textarea>
             </label>
-            <br><br>
+        </div>
+            <br>
+            <button type="submit">Submit</button>
 
-            <button type="submit">Submit the form</button>
         </fieldset>
 
 
 
         <fieldset>
 
-            <h2>How did you hear about us?</h2>
+            <legend>How did you hear about us?</legend>
 
-            <input type="radio" name="hear-about-us" value="billboard"> Billboard <br>
-             <input type="radio" name="hear-about-us" value="radio advertisement"> Radio Advertisement<br>
-             <input type="radio" name="hear-about-us" value="internet advertisement"> Internet advertisement<br>
-            <input type="radio" name="hear-about-us" value="other"> Other<br>
+           <label for="billboard"></label>
+            <input type="radio" id="billboard" name="about-us" value="billboard"> Billboard <br>
+             <input type="radio" id="radio-advertisement" name="about-us" value="radio-advertisement"> Radio Advertisement<br>
+             <input type="radio" id="internet-advertisement" name="about-us" value="internet-advertisement"> Internet advertisement<br>
+            <input type="radio" id="other" name="about-us" value="other"> Other<br>
 
-            <br><br>
+            <br>
 
             <button type="submit">Submit the form</button>
         </fieldset>
@@ -52,7 +56,7 @@
             <input type="checkbox" name="hear-about-us" value="internet advertisement"> Internet advertisement<br>
             <input type="checkbox" name="hear-about-us" value="other"> Other<br>
 
-            <br><br>
+            <br>
 
             <button type="submit">Submit the form</button>
         </fieldset>
@@ -67,6 +71,8 @@
                 <option value="firefox">Firefox</option>
                 <option value="explorer">Explorer</option>
             </select>
+            <br>
+            <button type="submit">Submit the form</button>
         </fieldset>
 
 
