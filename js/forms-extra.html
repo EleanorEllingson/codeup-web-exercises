@@ -15,57 +15,176 @@
     <label for="property-address">Property Address</label>
     <textarea input id="property-address" name="property-address" placeholder="Enter the property address"></textarea>
     </label><br>
+    <div>
     Anticipated:
     <label for="move-in-date">Move In Date:</label>
-    <input id="move-in-date" name="move-in-date" placeholder="Enter date">
+        <input id="move-in-date" name="move-in-date" placeholder="Enter date">
     <label for="monthly-rent">Monthly Rent:</label>
-    <input id="monthly-rent" name="monthly-rent" placeholder="Enter amount">
+        <input id="monthly-rent" name="monthly-rent" placeholder="Enter amount">
     <label for="security-deposit">Security Deposit:</label>
-    <input id="security-deposit" name="security-deposit" placeholder="Enter amount"><br><br>
-
+        <input id="security-deposit" name="security-deposit" placeholder="Enter amount"><br><br>
+    </div>
+    <div>
     <p>Applicant was referred to Landlord by:</p>
-    <input type="radio" name="referred" value="real-estate-agent"> Real estate agent
+        <input type="radio" name="referred" value="real-estate-agent"> Real estate agent
     <label for="name">(Name)</label>
-    <input id="name" name="name">
+        <input id="name" name="name">
     <label for="phone">(Phone)</label>
-    <input id="phone" name="phone">
-    <input type="radio" name="referred" value="Newspaper"> Newspaper
-    <input type="radio" name="referred" value="Sign"> Sign
-    <input type="radio" name="referred" value="internet"> Internet
-    <input type="radio" name="referred" value="other"> Other<br><br><br>
-
+        <input id="phone" name="phone">
+        <input type="radio" name="referred" value="Newspaper"> Newspaper
+        <input type="radio" name="referred" value="Sign"> Sign
+        <input type="radio" name="referred" value="internet"> Internet
+        <input type="radio" name="referred" value="other"> Other<br><br><br>
+    </div>
+    <div>
     <label for="applicant-name">Applicants name (first, middle, last):</label>
-    <input id="applicant-name" name="name" placeholder="Name">
+        <input id="applicant-name" name="name" placeholder="Name">
     <p>Is there a co-applicant?
-    <input type="radio" name="co-applicant" value="yes"> Yes
-    <input type="radio" name="co-applicant" value="no"> No
+        <input type="radio" name="co-applicant" value="yes"> Yes
+        <input type="radio" name="co-applicant" value="no"> No
     <em>If yes, co-applicant must submit a separate application</em></p>
     <label for="applicant-former-name">Applicants former last name (married or maiden):</label>
-    <input id="applicant-former-name" name="applicant-former-name" placeholder="Former Name"><br><br><br>
-
+        <input id="applicant-former-name" name="applicant-former-name" placeholder="Former Name"><br><br><br>
+    </div>
+    <div>
     <label for="email">Email</label>
-    <input id="email" name="email" placeholder="Email">
+        <input id="email" name="email" placeholder="Email">
     <label for="home-phone">Home Phone</label>
-    <input id="home-phone" name="home-phone" placeholder="Home Phone"><br>
+        <input id="home-phone" name="home-phone" placeholder="Home Phone"><br>
     <label for="work-phone">Home Phone</label>
-    <input id="work-phone" name="work-phone" placeholder="Work Phone">
+        <input id="work-phone" name="work-phone" placeholder="Work Phone">
     <label for="mobile-phone">Mobile Phone</label>
-    <input id="mobile-phone" name="mobile-phone" placeholder="Mobile Phone"><br>
+        <input id="mobile-phone" name="mobile-phone" placeholder="Mobile Phone"><br>
     <label for="soc-sec">Soc. Sec. No.</label>
-    <input id="soc-sec" name="soc-sec" placeholder="Soc. Sec. No.">
+        <input id="soc-sec" name="soc-sec" placeholder="Soc. Sec. No.">
     <label for="driver-license">Drivers License</label>
-    <input id="driver-license" name="driver-license" placeholder="Drivers License">
+        <input id="driver-license" name="driver-license" placeholder="Drivers License">
     <label for="state">In</label>
-    <input id="state" name="state" placeholder="State">
+        <input id="state" name="state" placeholder="State">
     <br>
     <label for="hair-color">Hair Color</label>
-    <input id="hair-color" name="hair-color" placeholder="Hair color">
-    <label for="marital-status">Marital status?</label>
-
+        <input id="hair-color" name="hair-color" placeholder="Hair color">
+    <label for="marital-status">Marital status</label>
+    </div>
+    <div>
     <select name="marital-status" id="marital-status">
         <option value="chrome">Married</option>
         <option value="safari">Single</option>
     </select>
+    <label for="citizenship">Citizenship</label>
+        <input id="citizenship" name="citizenship" placeholder="Enter country"><br><br>
+    </div>
+    <div>
+    <label for="emergency-contact-name">Emergency Contact:</label>
+        <input id="emergency-contact-name" name="emergency-contact" placeholder="Name">
+    <label for="emergency-contact-address"></label>
+        <input id="emergency-contact-address" name="emergency-contact-address" placeholder="Address">
+        <input id="emergency-contact-phone" name="emergency-contact-phone" placeholder="Phone">
+        <input id="emergency-contact-email" name="emergency-contact-email" placeholder="Email"><br><br>
+    </div>
+    <div>
+    <p>Name all other persons who will occupy the Property</p>
+    <label for="name1">Name</label>
+        <input id="name1" name="name1" placeholder="Name">
+    <label for="relationship1">Relationship</label>
+        <input id="relationship1" name="relationship1" placeholder="Relationship">
+    <label for="age1">Age</label>
+        <input id="age1" name="age1" placeholder="Age"><br>
+    <label for="name2">Name</label>
+        <input id="name2" name="name2" placeholder="Name">
+    <label for="relationship2">Relationship</label>
+        <input id="relationship2" name="relationship2" placeholder="Relationship">
+    <label for="age2">Age</label>
+        <input id="age2" name="age2" placeholder="Age"><br>
+    <label for="name3">Name</label>
+        <input id="name3" name="name3" placeholder="Name">
+    <label for="relationship3">Relationship</label>
+        <input id="relationship3" name="relationship3" placeholder="Relationship">
+    <label for="age3">Age</label>
+        <input id="age3" name="age3" placeholder="Age"><br>
+    <label for="name4">Name</label>
+        <input id="name4" name="name4" placeholder="Name">
+    <label for="relationship4">Relationship</label>
+        <input id="relationship4" name="relationship4" placeholder="Relationship">
+    <label for="age4">Age</label>
+        <input id="age4" name="age4" placeholder="Age"><br><br>
+    </div>
+    <div>
+    <label for="current-address">Applicants Current Address</label>
+        <input id="current-address" name="current-address" placeholder="Current address">
+    <label for="apt1">Apt. No.</label>
+        <input id="apt1" name="apt1" placeholder="Apt. No."><br>
+    <label for="city-state-zip1">City, State, Zip</label>
+        <input id="city-state-zip1" name="city-state-zip1" placeholder="City, State, Zip">
+    <label for="landlords-name1">Landlords name</label>
+        <input id="landlords-name1" name="landlords-name1" placeholder="Landlords Name">
+    <label for="email1">Email</label>
+        <input id="email1" name="email1" placeholder="Email"><br>
+    <label for="day-phone1">Phone: Day</label>
+        <input id="day-phone1" name="day-phone1">
+    <label for="night-phone1">Night</label>
+        <input id="night-phone1" name="night-phone1">
+    <label for="mobile-phone1">Mobile</label>
+        <input id="mobile-phone1" name="mobile-phone1">
+    <label for="fax1">Fax</label>
+        <input id="fax1" name="fax1"><br>
+    <label for="move-in1">Date Moved In</label>
+        <input id="move-in1" name="move-in1">
+    <label for="move-out1">Date Moved Out</label>
+        <input id="move-out1" name="move-out1">
+    <label for="rent1">Rent</label>
+        <input id="rent1" name="rent1">
+    </div>
+    <br><br>
+    <div>
+    <label for="previous-address">Applicants Previous Address</label>
+         <input id="previous-address" name="previous-address" placeholder="Previous address">
+    <label for="apt1">Apt. No.</label>
+        <input id="apt2" name="apt2" placeholder="Apt. No."><br>
+    <label for="city-state-zip1">City, State, Zip</label>
+        <input id="city-state-zip2" name="city-state-zip2" placeholder="City, State, Zip">
+    <label for="landlords-name2">Landlords name</label>
+         <input id="landlords-name2" name="landlords-name2" placeholder="Landlords Name">
+    <label for="email2">Email</label>
+        <input id="email2" name="email2" placeholder="Email"><br>
+    <label for="day-phone2">Phone: Day</label>
+        <input id="day-phone2" name="day-phone2">
+    <label for="night-phone2">Night</label>
+        <input id="night-phone2" name="night-phone2">
+    <label for="mobile-phone2">Mobile</label>
+        <input id="mobile-phone2" name="mobile-phone2">
+    <label for="fax2">Fax</label>
+        <input id="fax2" name="fax2"><br>
+    <label for="move-in2">Date Moved In</label>
+        <input id="move-in2" name="move-in2">
+    <label for="move-out2">Date Moved Out</label>
+        <input id="move-out2" name="move-out2">
+    <label for="rent2">Rent</label>
+        <input id="rent2" name="rent2">
+    </div>
+    <br><br>
+    <div>
+    <label for="current-employer">Applicants Current Employer</label>
+        <input id="current-employer" name="current-employer" placeholder="Current Employer">
+    <label for="employer-address">Address</label>
+        <textarea input id="employer-address" name="employer-address" placeholder="Enter the address"></textarea><br>
+    <label for="supervisor-name">Supervisors name</label>
+        <input id="supervisor-name" name="supervisor-name" placeholder="Name">
+    <label for="SupPhone2">Phone: Day</label>
+        <input id="SupPhone2" name="SupPhone2">
+    <label for="supFax">Fax</label>
+        <input id="supFax" name="supFax"><br>
+    <label for="email3">Email</label>
+        <input id="email3" name="email3" placeholder="Email">
+    <label for="startDate">Start Date</label>
+        <input id="startDate" name="startDate" placeholder="Start date"><br>
+    <label for="income">Gross Monthly Income</label>
+        <input id="income" name="income">
+    <label for="position">Position</label>
+        <input id="position" name="position">
+    </div>
+
+
 
 
 
