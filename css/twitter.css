@@ -62,14 +62,14 @@ li {
 }
 .profile-image {
     position: absolute;
-
+    top: -2em;
 
 }
 .profile-form {
     float: right;
     line-height: 80px;
-
 }
+
 .btn {
     border: 1px solid var(--main-link-color);
     color: var(--main-link-color);
@@ -82,6 +82,45 @@ li {
     font-size: 1.3em;
     padding: 10px;
 }
+.container {
+    margin: 2em;
+}
+.profile-details{
+    float: left;
+    width: calc(25% - 1em);
+    margin-right: .5em;
+    margin-left: .5em;
+}
+.timeline{
+    float: left;
+    width: calc(50% - 1em);
+    margin-right: .5em;
+    margin-left: .5em;
+}
+.who-to-follow{
+    float: right;
+    width: calc(25% - 1em);
+    margin-right: .5em;
+    margin-left: .5em;
+}
+.media {
+    background: var(--light-bg);
+    border-bottom: var(--separator-color);
+    width: 100%;
+    padding: .5em;
+    overflow: auto;
+}
+
+
+.media-image{
+    max-width: 50px;
+    float: left;
+    margin-top: 1.33em;
+}
+.media-body{
+    float: left;
+    width: calc(100% - 50px);
+}
 .img-circle {
     border-radius: 100%;
     border: 4px solid var(--light-bg);
@@ -91,4 +130,12 @@ li {
 }
 .text-muted {
     color: var(--main-link-color);
+}
+.profile-items {
+    padding: 0;
+
+}
+.profile-entry{
+    list-style-type: none;
+    margin: .5em;
 }
