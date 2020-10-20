@@ -1,0 +1,9 @@
+What is the difference between an inline and a block element?
+    A block element starts on a new line and takes up the full width available. An inline element is just with the text.
+What does the float CSS property do?
+    Specifies how an element should float. It is used to position: left, right, none, inherent
+What is the default positioning for elements?
+    Static
+
+What does the clear CSS property do?
+    The clear property specifies on which sides of an element floating elements are not allowed to float.
