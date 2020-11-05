@@ -45,10 +45,10 @@ var alamoMarker = new mapboxgl.Marker(markerOptions)
 
 // TODO: Experiment with the color, and setting the LngLat
 // TODO: Update the marker object to make the marker draggable. *Hint: reference the docs!
-var popup = new mapboxgl.Popup()
-    .setLngLat([-98.489615, 29.426827])
-    .setHTML("<h1>Codeup Rocks</h1>")
-    .addTo(map);
+// var popup = new mapboxgl.Popup()
+//     .setLngLat([-98.489615, 29.426827])
+//     .setHTML("<h1>Codeup Rocks</h1>")
+//     .addTo(map);
 
 /**********************************************
  * 					POPUPS
@@ -59,11 +59,11 @@ var popup = new mapboxgl.Popup()
 
 // TODO TOGETHER: Add a popup to the map over codeup. Set the html as a paragraph that says "Codeup Rocks!"
 // TODO TOGETHER: Comment out the popup we just added. Add a popup to the alamo marker.
-var alamoPopup = new mapboxgl.Popup()
-    .setHTML("<p>Remember the Alamo</p>")
-    .addTo(map);
-
-alamoMarker.setPopup(alamoPopup);
+// var alamoPopup = new mapboxgl.Popup()
+//     .setHTML("<p>Remember the Alamo</p>")
+//     .addTo(map);
+//
+// alamoMarker.setPopup(alamoPopup);
 
 
 
@@ -85,7 +85,7 @@ alamoMarker.setPopup(alamoPopup);
 
 
 
-geocode("600 Navarro St #350, San Antonio, TX 78205", mapboxToken).then(function (result){
+geocode("5415 W Loop 1604 N, San Antonio, TX 78253", mapboxToken).then(function (result){
     console.log(result);
     map.setCenter(result);
     map.setZoom(15)
