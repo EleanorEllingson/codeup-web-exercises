@@ -12,8 +12,19 @@
 
 //TODO TOGETHER: Set map to san antonio area using the coordinates [-98.4916, 29.4252]
 
-//TODO: Experiment with different map styles, zoom levels, and centers. You will need to reference the mapbox docs. (~10 minutes)
+mapboxgl.accessToken = mapboxToken;
 
+var mapOptions = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
+    center: [-98.4916, 29.4252], // starting position [lng, lat]
+    zoom: 9 // starting zoom
+});
+
+var map1 = new mapboxgl.Map(mapOptions);
+
+
+//TODO: Experiment with different map styles, zoom levels, and centers. You will need to reference the mapbox docs. (~10 minutes)
 
 /**********************************************
  * 					MARKERS
@@ -21,15 +32,23 @@
 // Marker Docs --> https://docs.mapbox.com/mapbox-gl-js/api/#marker
 // Markers are specific locations on a map
 //Use the .setLngLat() and .addTo() methods to add marker to the map
-
-
 // TODO TOGETHER: Add a marker to the map using the following coordinates [-98.4916, 29.4260]. This marker will mark the Alamo on our map.
 // TODO TOGETHER: Change the color of the marker
+var markerOptions = {
+    color: "#ff0000",
+    draggable: true
+}
+var alamoMarker = new mapboxgl.Marker(markerOptions)
+    .setLngLat([-98.4861, 29.4260])
+    .addTo(map1);
 
 
 // TODO: Experiment with the color, and setting the LngLat
 // TODO: Update the marker object to make the marker draggable. *Hint: reference the docs!
-
+var popup = new mapboxgl.Popup()
+    .setLngLat([-98.489615, 29.426827])
+    .setHTML("<h1>Codeup Rocks</h1>")
+    .addTo(map1);
 
 /**********************************************
  * 					POPUPS
