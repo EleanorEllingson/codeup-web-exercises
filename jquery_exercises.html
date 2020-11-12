@@ -38,7 +38,7 @@
 <p id="codeup">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium aperiam autem consequuntur cupiditate eius error facilis iusto laboriosam, laudantium maiores minus possimus praesentium, quisquam sunt tempore temporibus vero vitae?
 </p>
-<script type="text/javascript" src="jquery-2.2.4.js"></script>
+<script type="text/javascript" src="js/jquery-2.2.4.js"></script>
 <!--<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>-->
 <script>
 
@@ -65,6 +65,20 @@
     //
     // var h1alert = $('h1').html();
     //     alert(h1alert)
+
+    $('h1').click(function (){
+        $('h1').css('background', 'red')
+    })
+
+    $('p').dblclick(function (){
+        $('p').css('font-size', '18px')
+    })
+
+    $('li').hover(function (){
+        $(this).css('color', 'red')
+    }, function() {
+        $(this).css('color', 'black')
+    })
 
 
     });
