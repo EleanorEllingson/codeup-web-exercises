@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Konami Code</title>
+</head>
+<body>
+<h1>Konami Code</h1>
+<div class="intro">Press the following keys: Up Up Down Down Left Right Left Right B A Enter</div>
+<script src="js/jquery-2.2.4.js"></script>
+<script>
+    "use strict";
+
+    // $(document).keyup(function(event){
+    //     console.log(event.keyCode);
+    // });
+
+    function konami(fn) {
+        var input = "";
+        var pattern = "3838404037393739666513";
+        $(document).keyup(function(e) {
+            input += e.keyCode;
+            if (input.indexOf(pattern) !== -1) {
+                fn();
+                input = "";
+            }
+        });
+    }
+
+    $(document).ready(function() {
+        konami(function() {
+            alert("You have added 30 lives!");
+            $("body").addClass('red').css('background-color', 'yellow');
+
+        });
+    });
+
+
+</script>
+</body>
+</html>
