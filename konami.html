@@ -5,7 +5,22 @@
 </head>
 <body>
 <h1>Konami Code</h1>
-<div class="intro">Press the following keys: Up Up Down Down Left Right Left Right B A Enter</div>
+
+    <h3>To see coolness follow these directions:</h3>
+    <dl>
+        <dt>Press the following keys in order:</dt>
+        <dd>-Up</dd>
+        <dd>-Up</dd>
+        <dd>-Down</dd>
+        <dd>-Down</dd>
+        <dd>-Left</dd>
+        <dd>-Right</dd>
+        <dd>-Left</dd>
+        <dd>-Right</dd>
+        <dd>-B</dd>
+        <dd>-A</dd>
+        <dd>Enter</dd>
+    </dl>
 <script src="js/jquery-2.2.4.js"></script>
 <script>
     "use strict";
@@ -29,7 +44,8 @@
     $(document).ready(function() {
         konami(function() {
             alert("You have added 30 lives!");
-            $("body").addClass('red').css('background-color', 'yellow');
+            // $("body").addClass('red').css('background-color', 'yellow');
+            $('body').css('background-image', 'url(./Videos/tenor.gif')
 
         });
     });
