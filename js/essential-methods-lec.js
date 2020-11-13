@@ -151,7 +151,16 @@ $(document).ready(function() {
      *********************************************/
 
     //TODO TOGETHER: Using the each method, highlight every other list item in the Ravenclaw house
+   $('#slytherin').children().each(function (index, element){
+       if(index % 2 !== 0){
+           $(this).css('background-color', '#ff0')
+       }
+   });
+
+
     //TODO TOGETHER: Change the font color of the first list element in Hufflepuff
+   $('#hufflepuff').children().first().css('color', 'blue')
+
     //TODO TOGETHER: Change the font color of the last list element in Slytherin
 
     //TODO TOGETHER: When the 'Witches' button is clicked, highlight all names that have been assigned the class of 'witches'
