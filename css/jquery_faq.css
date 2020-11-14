@@ -1,3 +1,7 @@
 /*dd {*/
 /*    visibility: hidden;*/
 /*}*/
+
+#register{
+    display: none;
+}
