@@ -1,0 +1,36 @@
+#products{
+
+    border: 1px solid black;
+    padding: 1em;
+    margin: auto;
+
+
+}
+th {
+    border: 1px solid black;
+    background: lightgray;
+    padding: 1em;
+
+}
+
+td {
+    border: 1px solid black;
+    padding: 1em;
+    background: #DDDDDD;
+}
+
+
+h1{
+    /*margin: auto;*/
+    background: 20px lightblue;
+    padding: .5em;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+button{
+    margin: 2em;
+    background: lightblue;
+
+}
