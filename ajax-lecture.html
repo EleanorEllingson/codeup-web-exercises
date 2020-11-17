@@ -46,17 +46,17 @@
         //     console.log(data.vehicles[0]);
         // });
 
-
-        $.ajax('./data/orders.json').done(function (data){
-            console.log(data[1].orderedBy)
-            console.log(data[1]);
-            console.log(data[2].orderedBy)
-        })
-
-
-        $.ajax('https://swapi.dev/api/people/4').done(function (data){
-            console.log(data.skin_color);
-        })
+        //
+        // $.ajax('./data/orders.json').done(function (data){
+        //     console.log(data[1].orderedBy)
+        //     console.log(data[1]);
+        //     console.log(data[2].orderedBy)
+        // })
+        //
+        //
+        // $.ajax('https://swapi.dev/api/people/4').done(function (data){
+        //     console.log(data.skin_color);
+        // })
 
         // jQuery request object
         //
@@ -83,21 +83,21 @@
 
         // single argument with .done(), .fail() and .always() methods
 
-        // $.ajax({
-        //     "url": "https://swapi.dev/api/films",
-        //     "type": "GET",
-        //     "data": {
-        //         "search": "A New Hope"
-        //     }
-        // }).done(function(data, status, jqXhr) {
-        //     // console.log(status);
-        //     console.log(data);
-        //     console.log("The director of Star Wars: A New Hope is..." + data.results[0].director);
-        // }).fail(function(jqXhr, status, error) {
-        //     console.log("Request failed! " + status);
-        // }).always(function() {
-        //     console.log("Request made.");
-        // });
+        $.ajax({
+            "url": "https://swapi.dev/api/films",
+            "type": "GET",
+            "data": {
+                "search": "A New Hope"
+            }
+        }).done(function(data, status, jqXhr) {
+            // console.log(status);
+            console.log(data);
+            console.log("The director of Star Wars: A New Hope is..." + data.results[0].director);
+        }).fail(function(jqXhr, status, error) {
+            console.log("Request failed! " + status);
+        }).always(function() {
+            console.log("Request made.");
+        });
 
 
         // Url first argument and configuration object second argument
