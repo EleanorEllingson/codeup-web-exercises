@@ -11,12 +11,13 @@
 
 <table id="products">
     <thead>
-<!--        <tr>-->
-<!--            <th>Title</th>-->
-<!--            <th>Quantity</th>-->
-<!--            <th>Price</th>-->
-<!--            <th>Categories</th>-->
-<!--        </tr>-->
+        <tr>
+            <th>Title</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Categories</th>
+            <th>Color</th>
+        </tr>
     </thead>
     <tbody id="insertProducts">
 
@@ -52,36 +53,40 @@ $(document).ready(function() {
     //             its contents and fields
     //       HINT: You will want to target #insertProducts for your new HTML elements
     function productTable(products) {
-        var productsHTML = "";
-        productsHTML += "<table>"
-
-        productsHTML += "<tr>"
+        document.querySelector("#insertProducts").innerHTML = "";
+        // var productsHTML = "";
+        // productsHTML += "<table>"
+        // var table = document.createElement("table");
+        var tr, td;
         products.forEach(function (product) {
-            productsHTML += "<th>" + product.title + "</th>";
+
+            // productsHTML += "<tr>";
+            tr = document.createElement("tr");
+            var productMapped = [
+                product.title,
+                product.quantity,
+                product.price,
+                product.categories,
+                product.color
+
+            ]
+            for(var index in productMapped) {
+                td = document.createElement("td");
+                td.innerText = productMapped[index];
+                tr.appendChild(td);
+
+            }
+            // productsHTML += "<td>" + product.title + "</td>";
+            // productsHTML += "<td>" + product.quantity + "</td>";
+            // productsHTML += "<td>" + product.price + "</td>";
+            // productsHTML += "<td>" + product.categories + "</td>";
+            // productsHTML += "</tr>";
+            document.querySelector("#insertProducts").appendChild(tr);
         });
-        productsHTML += "</tr>";
-        productsHTML += "<tr>"
+        // productsHTML += "</table>";
 
-        products.forEach(function (product) {
-            productsHTML += "<td>" + "<strong>Quantity </strong>" + product.quantity + "</td>";
-        });
-        productsHTML += "</tr>";
+        // $("#insertProducts").html(productsHTML);
 
-        productsHTML += "<tr>"
-        products.forEach(function (product) {
-            productsHTML += "<td>" + "<strong>Price</strong> $" + product.price + "</td>";
-        });
-        productsHTML += "</tr>";
-        productsHTML += "<tr>"
-        products.forEach(function (product) {
-            productsHTML += "<td>" + "<strong>Categories </strong>" + product.categories + "</td>";
-        });
-
-
-        productsHTML += "</tr>"
-        productsHTML += "</table>";
-
-        $("#insertProducts").html(productsHTML);
     }
 
 
