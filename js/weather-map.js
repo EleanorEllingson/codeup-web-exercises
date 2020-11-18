@@ -51,7 +51,10 @@ marker.on('dragend', function (){
 })
 
 
-function updatePage(lon, lat){
+
+
+
+function updatePage(lon, lat) {
 
     $.get("https://api.openweathermap.org/data/2.5/onecall", {
         APPID: OPEN_WEATHER_APPID,
@@ -61,11 +64,21 @@ function updatePage(lon, lat){
     }).done(function (data) {
         console.log(data);
         weather5day(data.daily.slice(0, 5));
+        console.log(data.current)
+        currentWeather(data.current);
     });
-
-
-
 }
+    function currentWeather(current) {
+        document.querySelector(".current-weather").innerHTML = "";
+        var h4;
+
+        h4 = document.createElement("h4")
+        var currentMapped = current.temp;
+        h4.innerText = "Current Temperature " + current.temp
+        h4 = document.querySelector(".current-weather").appendChild(h4)
+
+
+    }
 function weather5day(days){
     document.querySelector("#days").innerHTML = "";
     var h5, ul, li;
@@ -78,7 +91,7 @@ function weather5day(days){
         ul = document.createElement("ul");
 
         ul.appendChild(h5)
-        var rain = day.rain * 100;
+        var rain = day.rain * 1;
         if(isNaN(rain)){
             rain = 0;
         }
@@ -86,7 +99,7 @@ function weather5day(days){
             "High temperature = " + Math.round(day.temp.max),
             "Low temperature = " + Math.round(day.temp.min),
             "Humidity = " + day.humidity + "%",
-            "Chance of rain = " + rain + "%"
+            "Weather conditions = " + day.weather[0].description
         ]
         for(var index in productMapped) {
             li = document.createElement("li");
@@ -103,5 +116,7 @@ function weather5day(days){
 
 // $('#update').click(updatePage);
 updatePage(-79.4512, 43.6568)
+
+
 
 });
