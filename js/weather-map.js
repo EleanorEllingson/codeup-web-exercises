@@ -70,12 +70,11 @@ function updatePage(lon, lat) {
 }
     function currentWeather(current) {
         document.querySelector(".current-weather").innerHTML = "";
-        var h4;
+        var h5;
 
-        h4 = document.createElement("h4")
-        var currentMapped = current.temp;
-        h4.innerText = "Current Temperature " + current.temp
-        h4 = document.querySelector(".current-weather").appendChild(h4)
+        h5 = document.createElement("h5")
+        h5.innerText = "Current Temperature " + Math.round(current.temp) + " °F"
+        h5 = document.querySelector(".current-weather").appendChild(h5)
 
 
     }
@@ -96,8 +95,8 @@ function weather5day(days){
             rain = 0;
         }
         var productMapped = [
-            "High temperature = " + Math.round(day.temp.max),
-            "Low temperature = " + Math.round(day.temp.min),
+            "High temperature = " + Math.round(day.temp.max) + " °F",
+            "Low temperature = " + Math.round(day.temp.min) + " °F",
             "Humidity = " + day.humidity + "%",
             "Weather conditions = " + day.weather[0].description
         ]
