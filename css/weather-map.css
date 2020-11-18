@@ -10,7 +10,7 @@ ul {
     margin: auto;
     margin-bottom: 2em;
     font-size: 10px;
-    padding: 3px;
+    padding: 6px;
 }
 body {
     margin: 1em;
@@ -19,6 +19,8 @@ body {
 .navbar{
     margin-bottom: 1em;
     color: white;
+    font-size: large;
+    padding: .5em;
 
 }
 
