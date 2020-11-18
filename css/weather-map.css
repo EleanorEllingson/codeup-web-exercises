@@ -1,34 +1,32 @@
 ul {
     display: inline;
     border: solid black 2px;
+    border-radius: 5%;
     list-style-type: none;
-    background-color: #DDDDDD;
+    background-color: black;
+    color: white;
     width: 14em;
     Height: 16em;
     margin: auto;
+    margin-bottom: 2em;
     font-size: 10px;
-    padding: 2px;
+    padding: 3px;
 }
 body {
     margin: 1em;
-    background-color: black;
+    background-color: white;
 }
 .navbar{
     margin-bottom: 1em;
+    color: white;
 
 }
 
-.nav-item{
-    color: #DDDDDD;
-}
 
-#days{
-    /*background-color: #DDDDDD;*/
-    border: solid black 1px;
-}
 
 h5{
     font-size: 15px;
     font-weight: bold;
     text-align: center;
+    color: white;
 }
