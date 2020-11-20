@@ -76,8 +76,8 @@ function updatePage(lon, lat) {
         h5.innerText = "Current Temperature " + Math.round(current.temp) + " °F"
         h5 = document.querySelector(".current-weather").appendChild(h5)
 
-
     }
+
 function weather5day(days){
     document.querySelector("#days").innerHTML = "";
     var h5, ul, li;
@@ -90,15 +90,12 @@ function weather5day(days){
         ul = document.createElement("ul");
 
         ul.appendChild(h5)
-        var rain = day.rain * 1;
-        if(isNaN(rain)){
-            rain = 0;
-        }
+
         var productMapped = [
-            "High temperature = " + Math.round(day.temp.max) + " °F",
-            "Low temperature = " + Math.round(day.temp.min) + " °F",
-            "Humidity = " + day.humidity + "%",
-            "Weather conditions = " + day.weather[0].description
+            "High temperature: " + Math.round(day.temp.max) + " °F",
+            "Low temperature: " + Math.round(day.temp.min) + " °F",
+            "Humidity : " + day.humidity + "%",
+            "Weather conditions: " + day.weather[0].description
         ]
         for(var index in productMapped) {
             li = document.createElement("li");

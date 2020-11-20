@@ -55,24 +55,7 @@ for(var i = 0; i < restaurants.length; i++){
         })
     })
 }
-    // geocode("5415 W Loop 1604 N, San Antonio, TX 78253", mapboxToken).then(function (result) {
-    //     console.log(result);
-    //     map.setCenter(result);
-    //     map.setZoom(15)
-    //
-    //     var freddysMarker = new mapboxgl.Marker()
-    //         .setLngLat(result)
-    //         .addTo(map)
-    //
-    //     var freddysPopup = new mapboxgl.Popup()
-    //         .setHTML("<p>Freddys</p>")
-    //         .addTo(map);
-    //
-    //     freddysMarker.setPopup(freddysPopup);
-    //     map.on("click", function (e) {
-    //
-    //     })
-    // })
+
 
 
 
