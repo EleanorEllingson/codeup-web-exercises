@@ -58,17 +58,16 @@ console.log(average);
 
 const longestEmail = users.reduce(function (longest, user){
     if(user.email.length > longest.length)
-        return user;
-    else
+        longest = user.email;
         return longest;
 }, '')
 
 console.log(longestEmail);
 
 
-const userNames = users.reduce((names, val) =>
-    names.concat(val.name),
-[]);
+const userNames = users.reduce((names, user) =>
+    names.concat(`${user.name}, `),
+ 'Your instructors are: ');
 
 console.log(userNames);
 // Use .filter to create an array of user objects where each user object has at least 3 languages in the languages array.
