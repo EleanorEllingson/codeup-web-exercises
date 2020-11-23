@@ -48,9 +48,10 @@ const resultB = users.map(user => user.email);
 console.log(resultB);
 
 
-const totalYears = users.reduce(function (total, user){
+const totalYears = users.reduce((total, user) => {
     return total + user.yearsOfExperience;
 },0);
+console.log(totalYears);
 const average = totalYears / users.length;
 
 console.log(average);
