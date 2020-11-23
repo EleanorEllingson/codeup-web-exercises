@@ -41,26 +41,26 @@
 
   // ============ Basic Example of Promise Creation and Handling
 
-  let goodKid = true;
-
-  // a promise is made to do something
-  const getCake = new Promise((resolve, reject) => {
-    if (goodKid) {
-      resolve("Here is some cake");
-    } else {
-      reject("Bad. No cake. :(");
-    }
-  });
-
-  console.log(getCake); // promise object
-
-  // once the promise is resolved or rejected, take additional action
-
-  getCake.then((data) => {
-    console.log(data);
-  }).catch((err) => {
-    console.log(err);
-  });
+  // let goodKid = true;
+  //
+  // // a promise is made to do something
+  // const getCake = new Promise((resolve, reject) => {
+  //   if (goodKid) {
+  //     resolve("Here is some cake");
+  //   } else {
+  //     reject("Bad. No cake. :(");
+  //   }
+  // });
+  //
+  // console.log(getCake); // promise object
+  //
+  // // once the promise is resolved or rejected, take additional action
+  //
+  // getCake.then((data) => {
+  //   console.log(data);
+  // }).catch((err) => {
+  //   console.log(err);
+  // });
 
   // ============ Using Promises with jQuery version 3+
 
@@ -101,12 +101,16 @@
   //     });
 
   // Fetch API GET example
-  //     fetch('https://swapi.co/api/people/1')
+  //     fetch('https://swapi.dev/api/people/1')
   //         .then((response) => {
   //             return response.json();
   //         })
   //         .then((data) => {
-  //             console.log(data);
+  //           console.log(data.name)
+  //           console.log(data.gender)
+  //           console.log(data.birth_year)
+  //           console.log(data.eye_color);
+  //
   //         })
   //         .catch(console.log);
 
@@ -122,6 +126,7 @@
   //         password: "pass123"
   //     })
   // })
+  //     .then(res => res.json)
   //     .then(console.log)
   //     .catch(console.log);
 
