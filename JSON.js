@@ -1,3 +1,4 @@
+[
 {
     "Name": "Bash",
     "numberStudents": 2,
@@ -21,3 +22,4 @@
     "Remote"  : false,
     "Instructors" : ["Fernando M, Douglas H"]
 }
+]
