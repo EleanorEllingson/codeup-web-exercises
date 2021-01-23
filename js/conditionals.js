@@ -166,5 +166,5 @@ var enterNumber = confirm("Would you like to enter a number?")
         if (isNaN(parseFloat(number))) {
             alert("That is not a number")
         }
-    }
+
 }
